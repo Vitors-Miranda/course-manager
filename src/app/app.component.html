@@ -1,8 +1,8 @@
-{{title}}
+<app-nav-bar></app-nav-bar>
 
-<br>
-{{name}}
-<br>
-<input [(ngModel)]="name" name="name">
-<!-- oneway databind é só colchete, twoway é colchete e parenteses -->
-<!-- ngModel atribui relação do input com valor de variável -->
+<div class="container mt-4">
+    <!-- avisando q fará um switch da rota aqui -->
+    <router-outlet></router-outlet>
+    <!-- <app-course-list></app-course-list> -->
+</div>
+

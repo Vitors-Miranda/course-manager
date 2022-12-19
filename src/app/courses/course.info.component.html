@@ -1,0 +1,16 @@
+ <h2> Course Info </h2>
+
+<hr>
+
+<form #courseForm="ngForm">
+    <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="course.name" name = "name" required #courseName="ngModel" [ngClass]="{'is-invalid': courseName.invalid}"class="form-control mb-3">
+            <!-- quando estiver inválido, ou seja, em branco, aparece a classe invalid feedback -->
+            <div class="invalid-feedback">
+                <span>Course name is required</span>
+            </div>
+        </div>
+    </div>
+</form> 
